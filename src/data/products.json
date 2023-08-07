@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Arroz Masgistral x 1 kg",
+    "description": "Arroz largo fino",
+    "code": "abcd",
+    "price": 440,
+    "stock": 650,
+    "category": "almacen",
+    "thumbnails": "../Imagenes/arroz.jpg",
+    "id": 1
+  },
+  {
+    "title": "Aceite Corona x 1.5 lt",
+    "description": "Acite de girasol",
+    "code": "abcd",
+    "price": 440,
+    "stock": 650,
+    "category": "almacen",
+    "thumbnails": "../Imagenes/aceite.jpg",
+    "id": 2
+  },
+  {
+    "title": "Aceite Cocinero x 1.5 lt",
+    "description": "Acite de girasol",
+    "code": "abcd",
+    "price": 440,
+    "stock": 650,
+    "category": "almacen",
+    "thumbnails": "../Imagenes/aceite.jpg",
+    "id": 3
+  },
+  {
+    "title": "Aceite vicentin x 1.5 lt",
+    "description": "Acite de girasol",
+    "code": "abcd",
+    "price": 440,
+    "stock": 650,
+    "category": "almacen",
+    "thumbnails": "../Imagenes/aceite.jpg",
+    "id": 4
+  },
+  {
+    "title": "Gaseosas Secco 500 cc",
+    "description": "Gaseosas 500",
+    "code": "abcd",
+    "price": 480,
+    "stock": 320,
+    "category": "bebidas",
+    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "id": 5
+  }
+]

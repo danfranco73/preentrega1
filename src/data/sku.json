@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Aceite Cocinero x 1.5 lt",
+    "description": "Acite de girasol",
+    "code": "abcd",
+    "price": 440,
+    "stock": 650,
+    "category": "almacen",
+    "thumbnails": "../Imagenes/aceite.jpg",
+    "id": 1
+  },
+  {
+    "title": "Yerba Nobleza Gaucha x 1 kg",
+    "description": "la fruta del eden",
+    "code": "abcd",
+    "price": 440,
+    "stock": 650,
+    "category": "verduleria",
+    "thumbnails": "../Imagenes/yerbaNG.jpg",
+    "id": 2
+  },
+  {
+    "title": "Fideos Luchetti x 500 gr",
+    "description": "Fideos de semola",
+    "code": "abcd",
+    "price": 440,
+    "stock": 650,
+    "category": "almacen",
+    "thumbnails": "../Imagenes/Fideos.jpg",
+    "id": 3
+  },
+  {
+    "id": 4
+  }
+]
