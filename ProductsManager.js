@@ -25,7 +25,12 @@ class ProductsManager {
     // creo id para el producto sin que se repita
     try {
       const data = await this.getProducts();
-      const id = data.length + 1;
+      // creo un id que NO este ya en uso
+      let id = 1;
+      const ids = data.map((product) => product.id);
+      if (ids.length > 0) {
+        id = Math.max(...ids) + 1;
+      }
       const newProduct = {
         ...producto,
         id,
@@ -45,6 +50,9 @@ class ProductsManager {
     // Method to get a product by id
     async getProductById(id) {
       try {
+        if(id===undefined) throw new Error("No se ha ingresado un id");
+        if(id<1) throw new Error("El id debe ser mayor a 0");
+        if(id===null) throw new Error("El id no puede ser nulo");
         const data = await this.getProducts();
         const product = data.filter((product) => product.id === id);
         return product;

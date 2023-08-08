@@ -1,29 +1,19 @@
 [
   {
-    "title": "Arroz Masgistral x 1 kg",
-    "description": "Arroz largo fino",
-    "code": "abcd",
-    "price": 440,
-    "stock": 650,
-    "category": "almacen",
-    "thumbnails": "../Imagenes/arroz.jpg",
-    "id": 1
-  },
-  {
-    "title": "Aceite Corona x 1.5 lt",
+    "title": "Aceite Nuevo Cocinero x 1.5 lt",
     "description": "Acite de girasol",
-    "code": "abcd",
     "price": 440,
+    "code": "abcd1",
     "stock": 650,
     "category": "almacen",
     "thumbnails": "../Imagenes/aceite.jpg",
-    "id": 2
+    "id": 1
   },
   {
-    "title": "Aceite Cocinero x 1.5 lt",
+    "title": "Aceite Nuevo Cocinero x 1.5 lt",
     "description": "Acite de girasol",
-    "code": "abcd",
     "price": 440,
+    "code": "abcd2",
     "stock": 650,
     "category": "almacen",
     "thumbnails": "../Imagenes/aceite.jpg",
@@ -32,7 +22,7 @@
   {
     "title": "Aceite vicentin x 1.5 lt",
     "description": "Acite de girasol",
-    "code": "abcd",
+    "code": "abcd4",
     "price": 440,
     "stock": 650,
     "category": "almacen",
@@ -42,11 +32,91 @@
   {
     "title": "Gaseosas Secco 500 cc",
     "description": "Gaseosas 500",
-    "code": "abcd",
+    "code": "abcd5",
     "price": 480,
     "stock": 320,
     "category": "bebidas",
     "thumbnails": "../Imagenes/gaseosas.jpg",
     "id": 5
+  },
+  {
+    "title": "Gaseosas Secco 1500 cc",
+    "description": "Gaseosas 1500",
+    "code": "abcd6",
+    "price": 480,
+    "stock": 320,
+    "category": "bebidas",
+    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "id": 6
+  },
+  {
+    "title": "Gaseosas Etiqueta Zero 2.25 cc",
+    "description": "Gaseosas 2250",
+    "code": "f",
+    "price": 480,
+    "stock": 320,
+    "category": "bebidas",
+    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "id": 8
+  },
+  {
+    "title": "Gaseosas Etiqueta Negra 2250 cc",
+    "description": "Gaseosas 2250",
+    "code": "kdhjjgjgwfh",
+    "price": 480,
+    "stock": 320,
+    "category": "bebidas",
+    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "id": 9
+  },
+  {
+    "title": "Gaseosas Etiqueta Negra 2250 cc",
+    "description": "Gaseosas 2250",
+    "code": "abcd6",
+    "price": 480,
+    "stock": 320,
+    "category": "bebidas",
+    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "id": 11
+  },
+  {
+    "title": "Gaseosas Etiqueta Negra 2250 cc",
+    "description": "Gaseosas 2250",
+    "code": "jsyebeg",
+    "price": 480,
+    "stock": 320,
+    "category": "bebidas",
+    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "id": 12
+  },
+  {
+    "title": "Gaseosas Etiqueta Negra 2250 cc",
+    "description": "Gaseosas 2250",
+    "code": "jsyebddeg",
+    "price": 480,
+    "stock": 320,
+    "category": "bebidas",
+    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "id": 13
+  },
+  {
+    "title": "Gaseosas Etiqueta Negra 2250 cc",
+    "description": "Gaseosas 2250",
+    "code": "jsyeabddeg",
+    "price": 480,
+    "stock": 320,
+    "category": "bebidas",
+    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "id": 14
+  },
+  {
+    "title": "Gaseosas Etiqueta Negra 2250 cc",
+    "description": "Gaseosas 2250",
+    "code": "eghu",
+    "price": 480,
+    "stock": 320,
+    "category": "bebidas",
+    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "id": 15
   }
 ]
