@@ -1,0 +1,27 @@
+[
+  {
+    "id": "ee166040-1363-471c-a029-c123db5ba8d5",
+    "products": [
+      {
+        "pid": "6298",
+        "quantity": 1
+      },
+      {
+        "pid": "12262",
+        "quantity": 35
+      }
+    ]
+  },
+  {
+    "id": "178d3477-0db4-45a9-a46b-0920ae27d451",
+    "products": []
+  },
+  {
+    "id": "db853f46-0415-45be-8dbc-279a8fcf4e55",
+    "products": []
+  },
+  {
+    "id": "22f8444a-27ca-4345-bea1-c76703914f24",
+    "products": []
+  }
+]
