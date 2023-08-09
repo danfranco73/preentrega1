@@ -136,7 +136,7 @@
     "description": "Gaseosas 1500",
     "code": "huisolso",
     "price": 1800,
-    "stock": 240,
+    "stock": 242,
     "status": "true",
     "category": "bebidas",
     "thumbnails": "../Imagenes/gaseosas.jpg",
@@ -152,5 +152,16 @@
     "category": "bebidas",
     "thumbnails": "../Imagenes/gaseosas.jpg",
     "id": 12262
+  },
+  {
+    "title": "Gaseosas roca 2250 cc",
+    "description": "Gaseosas 2250",
+    "code": "85447",
+    "price": 480,
+    "stock": 320,
+    "status": ":true",
+    "category": "bebidas",
+    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "id": 71119
   }
 ]
