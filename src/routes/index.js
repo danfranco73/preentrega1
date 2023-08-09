@@ -1,3 +1,4 @@
+// I use this file to import all my routes and then export them to use them in my server.js so it looks cleaner and easier to read
 const { Router } = require("express");
 const router = Router();
 

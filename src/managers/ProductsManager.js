@@ -10,10 +10,10 @@ class ProductsManager {
     this.products = [];
   }
 
-  // Method to get all products
+  // Method to get all products in my products.json in the src/json folder
   async getProducts() {
     try {
-      const data = await fs.promises.readFile(this.filePath, "utf-8");
+      const data = await fs.promises.readFile(this.filePath, "utf-8"); 
       return JSON.parse(data);
     } catch (error) {
       console.log(error);
@@ -24,10 +24,10 @@ class ProductsManager {
   // Method to add a product
   async addProduct(producto) {
     try {
-      const id = Math.floor(Math.random() * 100000) + 1;
+      const id = Math.floor(Math.random() * 100000) + 1; // I use Math.random to generate a random id for my product and I expect that it will not be repeated
       const data = await this.getProducts();
       const newProduct = {
-        ...producto,
+        ...producto, // I use the spread operator to add whatever  I want (lets say I'm the user) to add as a product
         id: id,
       };
       data.push(newProduct);
@@ -45,7 +45,7 @@ class ProductsManager {
     // Method to get a product by id
     async getProductById(id) {
       try {
-        if(id===undefined) throw new Error("No se ha ingresado un id");
+        if(id===undefined) throw new Error("No se ha ingresado un id"); 
         if(id<1) throw new Error("El id debe ser mayor a 0");
         if(id===null) throw new Error("El id no puede ser nulo");
         const data = await this.getProducts();
@@ -64,7 +64,7 @@ class ProductsManager {
       const data = await this.getProducts();
       const index = data.findIndex((product) => product.id === id);
       data[index] = {
-        ...product,
+        ...product, // I use the spread operator to add whatever  I want to change in my product but keeping the code (I had to write it again because I didn't know how to do it)
         id: id,
       };
       await fs.promises.writeFile(

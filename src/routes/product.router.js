@@ -15,17 +15,17 @@ router.get("/", async (req, res) => {
     res.send({ status: "success", payload: products });
   }
 });
-// get products by id
+// route to get products by id
 router.get("/:pid", async (req, res) => {
-  int = parseInt(req.params.pid);
+  int = parseInt(req.params.pid); // I declared in the ProductsManager.js that the id must be a number
   const product = await productsManager.getProductById(int);
   res.send({ status: "success", payload: product });
 });
-// usamos el metodo addProduct del PoductsManagerjs y le pasamos el body pero si el code ya existe no lo deja agregar
+// route for adding products 
 router.post("/", async (req, res) => {
   let code = req.body.code;
   const products = await productsManager.getProducts();
-  const codes = products.map((product) => product.code);
+  const codes = products.map((product) => product.code); // here I get all the codes from my products.json so I can compare them later with the code that I want to add, so if the code already exists it will not be added
   if (codes.includes(code)) {
     res
       .status("400")
@@ -50,7 +50,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// usamos el metodo updateProduct y le pasamos el body pero si el code no existe no lo deja actualizar y tira error por consola
+// route for updating products by id, but the code must exist first and then it can be updated (I had to write it down every time I wanted to update a product, didn't know how to do it in another way)
 router.put("/:pid", async (req, res) => {
   int = Number(req.params.pid);
   let code = req.body.code;
@@ -71,7 +71,7 @@ router.put("/:pid", async (req, res) => {
       );
   }
 });
-
+// route for deleting products by id
 router.delete("/:pid", async (req, res) => {
   int = Number(req.params.pid);
   const product = await productsManager.deleteProduct(int);
