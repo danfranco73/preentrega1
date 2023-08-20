@@ -1,0 +1,30 @@
+{{! crear una vista home.handlebars que contenga la lista de products.json de la carpeta json }}
+<h1 class="title">Productos Estáticos</h1>
+<div id="list" class="box">
+
+  {{#each listaProductos}}
+    <div id={{this.id}}>
+      <div>
+        <img src={{this.thumbnails}} alt="" />
+        <h5>{{this.title}}</h5>
+        <div>
+          <p>
+            Id:
+            {{this.id}}
+            <br />
+            {{this.description}}
+            <br />
+            Categoría:
+            {{this.category}}
+            <br />
+            Código:
+            {{this.code}}<br />
+            Stock:
+            {{this.stock}}<br />
+            Precio: ${{this.price}}
+          </p>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

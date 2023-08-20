@@ -28,7 +28,7 @@ router.post("/", async (req, res) => {
   const codes = products.map((product) => product.code); // here I get all the codes from my products.json so I can compare them later with the code that I want to add, so if the code already exists it will not be added
   if (codes.includes(code)) {
     res
-      .status("400")
+      .status(400)
       .send("El código de producto ya existe y no se puede agregar");
   } else {
     try {
@@ -73,8 +73,8 @@ router.put("/:pid", async (req, res) => {
 });
 // route for deleting products by id
 router.delete("/:pid", async (req, res) => {
-  int = Number(req.params.pid);
-  const product = await productsManager.deleteProduct(int);
+ const id = Number(req.params.pid);
+  const product = await productsManager.deleteProduct(id);
   res.send({ status: "success", payload: product });
 });
 

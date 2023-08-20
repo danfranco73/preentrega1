@@ -7,19 +7,8 @@
     "stock": 650,
     "status": "true",
     "category": "almacen",
-    "thumbnails": "../Imagenes/aceite.jpg",
+    "thumbnails": "",
     "id": 1
-  },
-  {
-    "title": "Aceite Nuevo Cocinero x 1.5 lt",
-    "description": "Acite de girasol",
-    "price": 440,
-    "code": "abcd2",
-    "stock": 650,
-    "status": "true",
-    "category": "almacen",
-    "thumbnails": "../Imagenes/aceite.jpg",
-    "id": 3
   },
   {
     "title": "Aceite vicentin x 1.5 lt",
@@ -29,7 +18,7 @@
     "stock": 650,
     "status": "true",
     "category": "almacen",
-    "thumbnails": "../Imagenes/aceite.jpg",
+    "thumbnails": "",
     "id": 4
   },
   {
@@ -40,7 +29,7 @@
     "stock": 320,
     "status": "true",
     "category": "bebidas",
-    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "thumbnails": "",
     "id": 5
   },
   {
@@ -51,7 +40,7 @@
     "stock": 320,
     "status": "true",
     "category": "bebidas",
-    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "thumbnails": "",
     "id": 6
   },
   {
@@ -62,7 +51,7 @@
     "stock": 320,
     "status": "true",
     "category": "bebidas",
-    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "thumbnails": "",
     "id": 8
   },
   {
@@ -73,7 +62,7 @@
     "stock": 320,
     "status": "true",
     "category": "bebidas",
-    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "thumbnails": "",
     "id": 9
   },
   {
@@ -84,7 +73,7 @@
     "stock": 320,
     "status": "true",
     "category": "bebidas",
-    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "thumbnails": "",
     "id": 11
   },
   {
@@ -95,7 +84,7 @@
     "stock": 320,
     "status": "true",
     "category": "bebidas",
-    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "thumbnails": "",
     "id": 12
   },
   {
@@ -106,7 +95,7 @@
     "stock": 320,
     "status": "true",
     "category": "bebidas",
-    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "thumbnails": "",
     "id": 13
   },
   {
@@ -117,7 +106,7 @@
     "stock": 320,
     "status": "true",
     "category": "bebidas",
-    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "thumbnails": "",
     "id": 14
   },
   {
@@ -128,7 +117,7 @@
     "stock": 320,
     "status": "true",
     "category": "bebidas",
-    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "thumbnails": "",
     "id": 15
   },
   {
@@ -139,7 +128,7 @@
     "stock": 242,
     "status": "true",
     "category": "bebidas",
-    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "thumbnails": "",
     "id": 6298
   },
   {
@@ -150,7 +139,7 @@
     "stock": 320,
     "status": ":true",
     "category": "bebidas",
-    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "thumbnails": "",
     "id": 12262
   },
   {
@@ -161,7 +150,30 @@
     "stock": 320,
     "status": ":true",
     "category": "bebidas",
-    "thumbnails": "../Imagenes/gaseosas.jpg",
+    "thumbnails": "",
     "id": 71119
+  },
+  {
+    "title": "Bizcochuelo Exquisita",
+    "description": "Bizochuelo 450 g",
+    "price": "490",
+    "code": "892293",
+    "stock": "4332",
+    "status": "true",
+    "category": "almacen",
+    "thumbnails": "",
+    "id": 60475
+  },
+  {
+    "title": "",
+    "description": "",
+    "price": "",
+    "code": "",
+    "stock": "",
+    "status": "",
+    "category": "",
+    "thumbnails": "",
+    "pid": "4",
+    "id": 86371
   }
 ]

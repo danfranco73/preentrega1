@@ -1,0 +1,142 @@
+<h1 class="title">Products in Real Time</h1>
+{{! creo un form para ingresar los datos del producto (necesarios desde el products.router.js) para pushearlo en la lista de productos }}
+<div class="formP">
+  <form action="/api/products" method="POST" id="addProduct">
+    <div class="form-group">
+      <label for="title">Nombre del producto</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        name="title"
+        placeholder="Nombre del producto*"
+      />
+      required
+    </div>
+    <div class="form-group">
+      <label for="description">Descripción*</label>
+      <input
+        type="text"
+        class="form-control"
+        id="description"
+        name="description"
+        placeholder="Descripción del producto"
+      />
+      required
+    </div>
+    <div class="form-group">
+      <label for="price">Precio*</label>
+      <input
+        type="number"
+        class="form-control"
+        id="price"
+        name="price"
+        placeholder="Precio"
+      />
+      required
+    </div>
+    <div class="form-group">
+      <label for="code">Código*</label>
+      <input
+        type="text"
+        class="form-control"
+        id="code"
+        name="code"
+        placeholder="Código del Producto"
+      />
+      required
+    </div>
+    <div class="form-group">
+      <label for="stock">Stock*</label>
+      <input
+        type="number"
+        class="form-control"
+        id="stock"
+        name="stock"
+        placeholder="Stock"
+      />
+      required
+    </div>
+    <div class="form-group">
+      <label for="status">Estado</label>
+      <input
+        type="text"
+        class="form-control"
+        id="status"
+        name="status"
+        placeholder="Estado"
+      />
+    </div>
+    <div class="form-group">
+      <label for="category">Categoría*</label>
+      <input
+        type="text"
+        class="form-control"
+        id="category"
+        name="category"
+        placeholder="Categoría"
+      />
+      required
+    </div>
+    <div class="form-group">
+      <label for="thumbnails">Imagen</label>
+      <input
+        type="text"
+        class="form-control"
+        id="thumbnails"
+        name="thumbnails"
+        placeholder="URL de la imagen"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+    </div>
+  </form>
+  <br />
+  {{!-- creo un input para usar el metodo delete product by id --}}
+  <form action="api/products/:pid" method="DEL" id="delProduct"></form>
+    <div class="form-group">
+      <label for="id">Id del producto a eliminar</label>
+      <input
+        type="number"
+        class="form-control"
+        id="id"
+        name="id"
+        placeholder="Id del producto a eliminar"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Eliminar</button>
+  </form>
+
+<br />
+
+<div id="list" class="box">
+
+  {{#each listaProductos}}
+    <div id={{this.id}}>
+      <div>
+        <img src={{this.thumbnails}} alt="" />
+        <h5>{{this.title}}</h5>
+        <div>
+          <p>
+            Id:
+            {{this.id}}
+            <br />
+            {{this.description}}
+            <br />
+            Categoría:
+            {{this.category}}
+            <br />
+            Código:
+            {{this.code}}<br />
+            Stock:
+            {{this.stock}}<br />
+            Precio: ${{this.price}}
+          </p>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="../public/js/realTimeProducts.js"></script>
