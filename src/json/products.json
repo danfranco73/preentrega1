@@ -11,17 +11,6 @@
     "id": 1
   },
   {
-    "title": "Aceite vicentin x 1.5 lt",
-    "description": "Acite de girasol",
-    "code": "abcd4",
-    "price": 440,
-    "stock": 650,
-    "status": "true",
-    "category": "almacen",
-    "thumbnails": "",
-    "id": 4
-  },
-  {
     "title": "Gaseosas Secco 500 cc",
     "description": "Gaseosas 500",
     "code": "abcd5",
@@ -175,5 +164,49 @@
     "thumbnails": "",
     "pid": "4",
     "id": 86371
+  },
+  {
+    "title": "da",
+    "description": "da",
+    "price": "48",
+    "code": "46564uu",
+    "stock": "800",
+    "status": "true",
+    "category": "almacen",
+    "thumbnails": "dd",
+    "id": 79583
+  },
+  {
+    "title": "da",
+    "description": "da",
+    "price": "480",
+    "code": "46564uunn",
+    "stock": "820",
+    "status": "true",
+    "category": "almacen",
+    "thumbnails": "dd",
+    "id": 59151
+  },
+  {
+    "title": "rebozador",
+    "description": "preferido",
+    "price": "430",
+    "code": "43390",
+    "stock": "390",
+    "status": "true",
+    "category": "almacen",
+    "thumbnails": "",
+    "id": 2245
+  },
+  {
+    "title": "hamburguesa",
+    "description": "hamb de carne",
+    "price": "380",
+    "code": "hm564",
+    "stock": "200",
+    "status": "true",
+    "category": "almacen",
+    "thumbnails": "",
+    "id": 812
   }
 ]

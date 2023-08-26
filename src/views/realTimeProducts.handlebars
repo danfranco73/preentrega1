@@ -93,18 +93,18 @@
   </form>
   <br />
   {{!-- creo un input para usar el metodo delete product by id --}}
-  <form action="api/products/:pid" method="DEL" id="delProduct"></form>
+  <form action="api/products/:id" method="DELETE" id="delProduct"></form>
     <div class="form-group">
       <label for="id">Id del producto a eliminar</label>
       <input
         type="number"
         class="form-control"
-        id="id"
+        id="id" 
         name="id"
         placeholder="Id del producto a eliminar"
       />
     </div>
-    <button type="submit" class="btn btn-primary">Eliminar</button>
+    <button className= "deleteButton" type="submit" class="btn btn-primary">Eliminar</button>
   </form>
 
 <br />

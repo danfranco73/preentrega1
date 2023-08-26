@@ -1,5 +1,3 @@
-// usamos el socket para conectarnos al servidor y actualizar el listado de productos en tiempo real, para eso usamos el evento 'sendProducts' que nos envia el servidor y el metodo updateList que actualiza el listado de productos en tiempo real en el html de la pagina y agregamos tanto un evento al formulario para agregar productos como un evento al formulario para agregar mensajes y los actualizamos en tiempo real en el html de la pagina y tambien un evento para eliminar productos y otro para actualizar productos y los actualizamos en tiempo real en el html de la pagina
-
 const socket = io();
 
 socket.on("connect", () => {
@@ -11,9 +9,19 @@ socket.on("disconnect", () => {
 });
 
 socket.on("sendProducts", (data) => {
-    updateList(data);
-    });
-    
+  updateList(data);
+});
+
+// delete product
+socket.on("deleteProduct", (id) => {
+  const productToDelete = data.find((product) => product.id === id);
+  if (productToDelete) {
+    data.splice(data.indexOf(productToDelete), 1);
+  }
+  updateList(data);
+});
+
+const data = []; // I use this to store the products
 
 const updateList = (data) => {
   const list = document.getElementById("list");
@@ -24,6 +32,7 @@ const updateList = (data) => {
     list.appendChild(li);
   });
 }; // I use this to update the list of products in real time
+
 
 const form = document.getElementById("addProduct");
 form.addEventListener("submit", (e) => {
@@ -50,13 +59,13 @@ form.addEventListener("submit", (e) => {
   updateList(data);
 });
 
+// create the delete button for each product in the list of products in real time 
+const deleteButtons = document.getElementsByClassName("deleteButton");
+for (let i = 0; i < deleteButtons.length; i++) {
+  deleteButtons[i].addEventListener("click", () => {
+    socket.emit("deleteProduct", deleteButtons[i].id);
+  });
+}
 
-const formDel = document.getElementById("delProduct");
-formDel.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const id = document.getElementById("id").value;
-    socket.emit("deleteProduct", id);
-    formDel.reset();
-    updateList(data);
-    });
 
+  

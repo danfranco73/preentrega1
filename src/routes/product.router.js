@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
 });
 // route to get products by id
 router.get("/:pid", async (req, res) => {
-  int = parseInt(req.params.pid); // I declared in the ProductsManager.js that the id must be a number
+  const int = parseInt(req.params.pid); // I declared in the ProductsManager.js that the id must be a number
   const product = await productsManager.getProductById(int);
   res.send({ status: "success", payload: product });
 });
